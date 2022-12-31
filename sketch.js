@@ -16,6 +16,7 @@ const MAXDVD = 18;
 
 let smackSound;
 let fishMoanSound;
+let hentaiSound;
 
 let r, g, b;
 
@@ -31,7 +32,7 @@ function preload() {
 
   smackSound = loadSound('smack.wav');
   fishMoanSound = loadSound('moaning-fish.mp3');
-
+  hentaiSound = loadSound('hentai-orgasm-short.mp3');
 
   dvd = dvds[0];
 }
@@ -95,7 +96,9 @@ function draw() {
 function handleClack(){
   clackCounter++;
   newDvd();
-
+  if(clackCounter % 11 ==0){
+    hentaiSound.play();
+  }
   if(clackCounter % 10 == 0){
     fishMoanSound.play();
   }else{

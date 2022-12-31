@@ -96,7 +96,7 @@ function draw() {
 function handleClack(){
   clackCounter++;
   newDvd();
-  if(clackCounter % 11 ==0){
+  if(clackCounter % 15 ==0){
     hentaiSound.play();
   }
   if(clackCounter % 10 == 0){

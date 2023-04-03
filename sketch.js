@@ -30,18 +30,18 @@ function preload() {
 
   dvds = [];
   for (let i = 0; i < MAXDVD; i++) {
-    dvds.push(loadImage("dvd_logo" + i + ".png"));
+    dvds.push(loadImage("dvd_logo" + i + "_small.png"));
   }
 
   smackSound = loadSound("smack.wav");
-  fishMoanSound = loadSound("moaning-fish.mp3");
-  hentaiSound = loadSound("hentai-orgasm-short.mp3");
+  fishMoanSound = loadSound("smack.wav");
+  hentaiSound = loadSound("smack.wav");
 
   dvd = dvds[0];
 }
 
 function setup() {
-  const speed = 20;
+  const speed = 2;
   createCanvas(windowWidth, windowHeight);
   x = random(width);
   y = random(height);
